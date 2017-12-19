@@ -69,7 +69,7 @@ tf.app.flags.DEFINE_string(
     'model_name', 'inception_v3', 'The name of the architecture to save.')
 
 tf.app.flags.DEFINE_boolean(
-    'is_training', False,
+    'is_training', True,
     'Whether to save out a training-focused version of the model.')
 
 tf.app.flags.DEFINE_integer(

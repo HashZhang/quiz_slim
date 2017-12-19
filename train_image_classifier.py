@@ -37,7 +37,7 @@ tf.app.flags.DEFINE_string(
 tf.app.flags.DEFINE_integer('num_clones', 1,
                             'Number of model clones to deploy.')
 
-tf.app.flags.DEFINE_boolean('clone_on_cpu', False,
+tf.app.flags.DEFINE_boolean('clone_on_cpu', True,
                             'Use CPUs to deploy clones.')
 
 tf.app.flags.DEFINE_integer('worker_replicas', 1, 'Number of worker replicas.')
@@ -214,7 +214,7 @@ tf.app.flags.DEFINE_string(
     'By default, None would train all the variables.')
 
 tf.app.flags.DEFINE_boolean(
-    'ignore_missing_vars', False,
+    'ignore_missing_vars', True,
     'When restoring a checkpoint would ignore missing variables.')
 
 FLAGS = tf.app.flags.FLAGS
